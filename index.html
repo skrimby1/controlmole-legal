@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ControlMole Privacy Policy</title>
+<meta name="description" content="How the ControlMole app handles your data.">
+<link rel="icon" href="favicon.png">
+<style>
+  :root {
+    --paper: #e9e1cf; --paper2: #e1d6bf; --cream: #fbf3e2; --cream-dark: #e4d6ba;
+    --ink: #17142b; --muted: #6e6680; --band: #e5483a; --chestnut: #8c5433;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #2a2747; --paper2: #24213e; --cream: #34304f; --cream-dark: #2b2744;
+      --ink: #f3ecdc; --muted: #b9b1c9; --band: #ff7a6b; --chestnut: #d39a73;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; color: var(--ink); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--paper);
+    background-image: conic-gradient(var(--paper2) 25%, transparent 0 50%, var(--paper2) 0 75%, transparent 0);
+    background-size: 64px 64px;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  .logo { display: block; width: min(100%, 806px); max-width: 520px; margin: 8px auto 24px; image-rendering: pixelated; }
+  .panel {
+    background: var(--cream); border: 4px solid var(--ink); padding: 24px 28px; margin: 0 0 20px;
+    box-shadow: 0 4px 0 var(--ink); clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px),
+      calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px);
+  }
+  h1 { font-size: 30px; margin: 0 0 4px; }
+  h2 { font-size: 20px; margin: 0 0 8px; color: var(--chestnut); text-transform: uppercase; letter-spacing: .04em; }
+  p, li { margin: 0 0 10px; }
+  ul { padding-left: 22px; margin: 0 0 6px; }
+  .muted { color: var(--muted); font-size: 15px; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-top: 2px solid var(--cream-dark); }
+  th { color: var(--muted); font-weight: 600; }
+  a { color: var(--band); }
+  @media (max-width: 560px) { .panel { padding: 18px 16px; } table, th, td { font-size: 14px; } }
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="logo.png" alt="ControlMole" width="806" height="330">
+
+  <section class="panel">
+    <h1>Privacy Policy</h1>
+    <p class="muted">ControlMole for Android, by Kairi Labs. Effective 12 October 2026.</p>
+    <p>ControlMole helps you limit your own screen time. To do that it looks at how you use your phone, and almost all of that stays on your phone. This page explains exactly what the app reads, what (little) leaves the device, and why.</p>
+    <p>In short: <strong>no ads, no account, no selling of data.</strong> Your app usage and the websites you visit are processed on your phone only. To fix bugs and improve the app, it sends anonymous crash reports and basic usage analytics through Google Firebase.</p>
+  </section>
+
+  <section class="panel">
+    <h2>What stays on your phone</h2>
+    <p>This information is read and stored only on your device. It is never sent to us or anyone else:</p>
+    <ul>
+      <li><strong>App usage</strong>: how long and how often you use the apps you choose to watch (via Android's Usage access).</li>
+      <li><strong>Installed apps</strong>: the names and icons of apps on your home screen, so you can pick which ones to limit.</li>
+      <li><strong>Websites</strong>: with the optional <em>Mole watch</em> (an accessibility service), the address bar of supported browsers, so time on sites like video or social sites counts towards your limit. Page content is never read.</li>
+      <li><strong>Your rules and progress</strong>: limits, timers, bedtime, streaks, achievements and settings.</li>
+    </ul>
+    <p>Uninstalling ControlMole deletes all of this.</p>
+  </section>
+
+  <section class="panel">
+    <h2>What leaves your phone</h2>
+    <p>ControlMole uses two Google Firebase services. Google processes this data for us as a service provider.</p>
+    <table>
+      <tr><th>Service</th><th>Data</th><th>Why</th></tr>
+      <tr><td>Firebase Crashlytics</td><td>Crash reports (stack traces and the app state at the moment of the crash), basic device information (model, Android version) and a random installation ID</td><td>To find and fix crashes</td></tr>
+      <tr><td>Google Analytics for Firebase</td><td>App interactions (which screens are opened, sessions), a random app-instance ID, and approximate location (country or region) derived from a masked IP address</td><td>To understand which features are used and improve the app</td></tr>
+    </table>
+    <p>This data is not linked to your name, email or any account, it never includes the apps or websites you use, and ControlMole does not collect the Android Advertising ID. Data is encrypted in transit. Crash reports are kept for up to 90 days and analytics data for up to 14 months.</p>
+    <p class="muted">Google's own handling of this data is described in the <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+  </section>
+
+  <section class="panel">
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>Usage access</strong>: to count minutes in the apps you choose to watch.</li>
+      <li><strong>Notifications</strong>: for limit warnings and reminders.</li>
+      <li><strong>Accessibility service (optional, "Mole watch")</strong>: to see which app is in front so ControlMole can show its block screen, and to read only the address bar of supported browsers. It does not read page content, keystrokes or other on-screen text, and what it sees stays on your phone.</li>
+      <li><strong>Device admin (optional, "Mole Lock")</strong>: only so Android asks you to switch it off before ControlMole can be uninstalled. You can switch it off in Settings at any time.</li>
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>Sharing and selling</h2>
+    <p>We don't sell your data, share it for advertising, or show ads. Apart from Google acting as our service provider (above), we only disclose information if the law requires it.</p>
+  </section>
+
+  <section class="panel">
+    <h2>Children</h2>
+    <p>ControlMole is meant for people aged 13 and over and is not directed at children under 13.</p>
+  </section>
+
+  <section class="panel">
+    <h2>Your rights</h2>
+    <p>Depending on where you live (for example under the GDPR), you may have the right to access, correct or delete personal data, or to object to its processing. Because we don't have accounts, the only data we hold is the pseudonymous crash and analytics data above. To make a request, email us. If you can, include the date you installed the app; we'll delete what we can identify. You can also complain to your local data protection authority.</p>
+    <p>Our legal basis for crash reporting and analytics is our legitimate interest in keeping the app working and improving it.</p>
+  </section>
+
+  <section class="panel">
+    <h2>Changes and contact</h2>
+    <p>If this policy changes, we'll update this page and the date at the top. For anything about privacy, contact Kairi Labs at <a href="mailto:software@magiskmg.com">software@magiskmg.com</a>.</p>
+    <p class="muted">Dig dig.</p>
+  </section>
+</main>
+</body>
+</html>
