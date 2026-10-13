@@ -49,7 +49,7 @@
 
   <section class="panel">
     <h1>Privacy Policy</h1>
-    <p class="muted">ControlMole for Android, by Kairi Labs. Effective 12 October 2026.</p>
+    <p class="muted">ControlMole for Android, by Kairi Labs. Effective 13 October 2026.</p>
     <p>ControlMole helps you limit your own screen time. To do that it looks at how you use your phone, and almost all of that stays on your phone. This page explains exactly what the app reads, what (little) leaves the device, and why.</p>
     <p>In short: <strong>no ads, no account, no selling of data.</strong> Your app usage and the websites you visit are processed on your phone only. To fix bugs and improve the app, it sends anonymous crash reports and basic usage analytics through Google Firebase.</p>
   </section>
@@ -68,14 +68,16 @@
 
   <section class="panel">
     <h2>What leaves your phone</h2>
-    <p>ControlMole uses two Google Firebase services. Google processes this data for us as a service provider.</p>
+    <p>ControlMole uses two Google Firebase services, and RevenueCat if you buy Mole Premium. They process this data for us as service providers.</p>
     <table>
       <tr><th>Service</th><th>Data</th><th>Why</th></tr>
       <tr><td>Firebase Crashlytics</td><td>Crash reports (stack traces and the app state at the moment of the crash), basic device information (model, Android version) and a random installation ID</td><td>To find and fix crashes</td></tr>
       <tr><td>Google Analytics for Firebase</td><td>App interactions (which screens are opened, sessions), a random app-instance ID, and approximate location (country or region) derived from a masked IP address</td><td>To understand which features are used and improve the app</td></tr>
+      <tr><td>RevenueCat</td><td>A random app user ID, your purchase history for ControlMole (which plan, when, store receipts and order IDs), and your country and currency from the store</td><td>To check whether Premium is active and restore it on a new phone</td></tr>
     </table>
+    <p>Payments themselves are handled by Google Play (or the App Store). We never see your card or payment details, your name or your email address.</p>
     <p>This data is not linked to your name, email or any account, it never includes the apps or websites you use, and ControlMole does not collect the Android Advertising ID. Data is encrypted in transit. Crash reports are kept for up to 90 days and analytics data for up to 14 months.</p>
-    <p class="muted">Google's own handling of this data is described in the <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+    <p class="muted">Google's own handling of this data is described in the <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, and RevenueCat's in the <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a>.</p>
   </section>
 
   <section class="panel">
@@ -83,14 +85,14 @@
     <ul>
       <li><strong>Usage access</strong>: to count minutes in the apps you choose to watch.</li>
       <li><strong>Notifications</strong>: for limit warnings and reminders.</li>
-      <li><strong>Accessibility service (optional, "Mole watch")</strong>: to see which app is in front so ControlMole can show its block screen, and to read only the address bar of supported browsers. It does not read page content, keystrokes or other on-screen text, and what it sees stays on your phone.</li>
+      <li><strong>Accessibility service (optional, "Mole watch")</strong>: to see which app is in front so ControlMole can show its block screen, to read only the address bar of supported browsers, and, if you block short videos, to check whether the Reels, Shorts or Spotlight player is open in Instagram, YouTube, Snapchat or Facebook so it can go back out of it. It does not read page content, video content, messages, keystrokes or other on-screen text, and what it sees stays on your phone.</li>
       <li><strong>Device admin (optional, "Mole Lock")</strong>: only so Android asks you to switch it off before ControlMole can be uninstalled. You can switch it off in Settings at any time.</li>
     </ul>
   </section>
 
   <section class="panel">
     <h2>Sharing and selling</h2>
-    <p>We don't sell your data, share it for advertising, or show ads. Apart from Google acting as our service provider (above), we only disclose information if the law requires it.</p>
+    <p>We don't sell your data, share it for advertising, or show ads. Apart from Google and RevenueCat acting as our service providers (above), we only disclose information if the law requires it.</p>
   </section>
 
   <section class="panel">
@@ -100,8 +102,8 @@
 
   <section class="panel" id="delete-data">
     <h2>Your rights and deleting your data</h2>
-    <p>Depending on where you live (for example under the GDPR), you may have the right to access, correct or delete personal data, or to object to its processing. Because we don't have accounts, the only data we hold is the pseudonymous crash and analytics data above. To ask us to delete your data, email <a href="mailto:software@magiskmg.com?subject=ControlMole%20data%20deletion">software@magiskmg.com</a> with the subject "ControlMole data deletion". If you can, include the date you installed the app; we'll delete what we can identify within 30 days. Everything stored on your phone is deleted when you uninstall the app. You can also complain to your local data protection authority.</p>
-    <p>Our legal basis for crash reporting and analytics is our legitimate interest in keeping the app working and improving it.</p>
+    <p>Depending on where you live (for example under the GDPR), you may have the right to access, correct or delete personal data, or to object to its processing. Because we don't have accounts, the only data we hold is the pseudonymous crash, analytics and purchase data above. To ask us to delete your data, email <a href="mailto:software@magiskmg.com?subject=ControlMole%20data%20deletion">software@magiskmg.com</a> with the subject "ControlMole data deletion". If you can, include the date you installed the app; we'll delete what we can identify within 30 days. Everything stored on your phone is deleted when you uninstall the app. You can also complain to your local data protection authority.</p>
+    <p>Our legal basis for crash reporting and analytics is our legitimate interest in keeping the app working and improving it. For Premium purchases it's providing what you bought; stores and tax law may require us to keep purchase records for longer.</p>
   </section>
 
   <section class="panel">
